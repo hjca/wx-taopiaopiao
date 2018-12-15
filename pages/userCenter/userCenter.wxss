@@ -1,0 +1,53 @@
+.movieUserHeader{
+  height: 200rpx;
+  background: #fff;
+  margin: 20rpx 0;
+  display: flex;
+  align-items: center;
+  padding: 0 40rpx;
+}
+.movieUserHeader image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.username{
+  display: block;
+  width: 300rpx;
+  height: auto;
+  font-size: 30rpx;
+  color: #333;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 20rpx;
+}
+.userCenterMenu{
+  height: 140rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.menuItem{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menuItem image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.menuItem text{
+  font-size: 26rpx;
+  color: #333;
+  margin-top: 10rpx;
+}
+.vanCell{
+  margin-bottom: 20rpx;
+}

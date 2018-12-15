@@ -1,0 +1,23 @@
+<template name="futureMovie">
+    <view class='futureMovieContent'>
+      <scroll-view 
+        class='futureArea' 
+        scroll-y="true" 
+        lower-threshold
+        bindscrolltolower="lower">
+
+        <!-- 电影列表 -->
+        <view class='movieFutureList'>
+          <view class='movieListItem'
+            wx:for="{{ movieListData }}"
+            wx:for-index="index"
+            wx:for-item="item"
+            wx:key="item.movieId"
+          >
+            <movieItem movieObj="{{ item }}"></movieItem>
+          </view>
+        </view>
+
+      </scroll-view>
+    </view>
+</template>

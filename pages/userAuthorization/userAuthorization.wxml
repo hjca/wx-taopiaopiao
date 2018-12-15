@@ -1,0 +1,8 @@
+<!-- 用户授权界面 -->
+<view class='userAuthor'>
+  <button
+    type="warn"
+    open-type='getUserInfo'
+    bindgetuserinfo='getUsreAuthor'
+    lang='zh_CN'>用户授权并登录</button>
+</view>

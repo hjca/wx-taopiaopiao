@@ -1,0 +1,75 @@
+page{
+  background: #fff;
+}
+.movieDetailHead{
+  height: 300rpx;
+  background: rgb(109, 150, 208);
+  display: flex;
+  align-items: center;
+  padding: 10rpx 20rpx;
+}
+.movieImg {
+  width: 200rpx;
+  height: 280rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  padding: 4rpx;
+}
+.movieImg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 8rpx;
+}
+.movieInfo{
+  height: 280rpx;
+  flex: 1;
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.movieInfo view{
+  width: 500rpx;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.movieInfo .movieName{
+  font-size: 44rpx;
+  color: #fff;
+  font-weight: 600;
+}
+.smallText{
+  font-size: 24rpx;
+  color: #fff;
+}
+.movieDetailButton{
+  height: auto;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20rpx 0;
+}
+.defaultButton{
+  width:340rpx;
+  height: 60rpx;
+  border: 1px solid #F0F0F0;
+  text-align: center;
+  line-height: 60rpx;
+  color: #333;
+  background-color: #F0F0F0;
+  font-size: 26rpx;
+  border-radius: 6rpx;
+}
+.movieIntroduction{
+  color: #333;
+  font-size: 30rpx;
+  text-align: justify;
+  text-indent: 20rpx;
+  line-height: 50rpx;
+  padding: 0 20rpx;
+}

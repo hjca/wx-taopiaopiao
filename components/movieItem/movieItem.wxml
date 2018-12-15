@@ -1,0 +1,26 @@
+<!-- 电影Item -->
+<view class='_movie_item'>
+  <view class='_movie_item_info'>
+    <image lazy-load="true" src='{{ movieObj.movieImg }}'></image>
+
+    <view class='_movie_info_detail'>
+      <text class='_movie_name'>{{ movieObj.movieName }}</text>
+      <view class='_movie_item_score'>
+        <text class='_movie_item_score_title'>淘票票评分:</text>
+        <text class='_movie_item_score_num'>{{ movieObj.moviePoints }}</text>
+      </view>
+      <text class='_movie_item_director'>导演：{{ movieObj.movieDirector }}</text>
+      <text class='_movie_item_starring'>主演：{{ movieObj.movieStarring }}</text>
+    </view>
+  </view>
+
+  <!-- 按钮 -->
+  <view class='_movie_default_list'>
+    <view class='{{ movieObj.movieBuy == 1 ? "_movie_default" : "_movie_default_spec" }}'>购票</view>
+    <view class='_movie_style'>{{ 
+      movieObj.movieTitleStyle ? 
+        movieObj.movieTitleStyle :
+        "特惠"
+    }}</view>
+  </view>
+</view>

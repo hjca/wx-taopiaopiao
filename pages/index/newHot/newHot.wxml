@@ -1,0 +1,50 @@
+<template name="newHot">
+    <view class='hotMovieContent'>
+      <scroll-view 
+        class='hotArea' 
+        scroll-y="true" 
+        lower-threshold
+        bindscrolltolower="lower">
+        <!-- 轮播 -->
+        <swiper class='hotSwiper'
+          indicator-dots="true"
+          indicator-active-color="#ffffff"
+          autoplay="true"
+          circular="true"
+          > 
+
+          <swiper-item
+            wx:for="{{ swiperItemList }}"
+            wx:for-item="item"
+            wx:for-index="index"
+            wx:key="item.id">
+
+            <image src='{{ item.imgUrl }}'></image>
+
+          </swiper-item>
+          
+        </swiper>
+
+        <!-- 广告 -->
+        <view class='advertising'>
+          <image src='https://gw.alicdn.com/tfs/TB1A_wsrlLoK1RjSZFuXXXn0XXa-1280-290.gif'></image>
+        </view>
+
+        <!-- 电影列表 -->
+        <view class='movieHotList'>
+          <view class='movieListItem'
+            wx:for="{{ movieListData }}"
+            wx:for-index="index"
+            wx:for-item="item"
+            wx:key="{{ item.movieId }}"
+            data-movieId='{{ item.movieId }}'
+            data-movidItem='{{ item }}'
+            catchtap='loadMovieDetail'
+          >
+            <movieItem movieObj="{{ item }}"></movieItem>
+          </view>
+        </view>
+
+      </scroll-view>
+    </view>
+</template>

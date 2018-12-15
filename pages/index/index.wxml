@@ -1,0 +1,37 @@
+<!-- 首页 -->
+<view class='movieClass'>
+  <!-- 选择样式 -->
+  <view class='selectType'>
+    <!-- 正在热映 -->
+    <view 
+      class='{{ current == 0 ? "select" : "default" }}' 
+      catchtap='selectType'
+      data-current="0">正在热映</view>
+
+    <!-- 即将上映 -->
+    <view 
+      class='{{ current == 1 ? "select" : "default" }}' 
+      catchtap='selectType'
+      data-current="1">即将上映</view>
+  </view>
+
+  <!-- 正文内容 -->
+  <swiper class='indexContent' bindchange="changeSwiper" current='{{ current }}'>
+
+    <!-- 正在热映 -->
+    <swiper-item>
+      <import src="newHot/newHot.wxml"/>
+      <template is="newHot" 
+        data="{{ swiperItemList:swiperList,movieListData:movieList }}"
+      />
+    </swiper-item>
+
+    <!-- 即将上映 -->
+    <swiper-item>
+      <view class='indexFuture'>
+        <import src="futureMovie/futureMovie.wxml"/>
+        <template is="futureMovie" data="{{ movieListData:movieList }}"/>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

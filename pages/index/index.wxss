@@ -1,0 +1,63 @@
+.movieClass{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.selectType{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90rpx;
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.selectType .default,
+.selectType .select{
+  color: #333;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 48%;
+  border-bottom: 4rpx solid #fff;
+}
+.selectType .select{
+  color: #d81e06;
+  border-bottom: 4rpx solid #d81e06;
+}
+.indexContent{
+  flex: 1;
+  border-top: 1px solid #f8f8f8;
+  background: #fff;
+}
+
+/* 正在热映、即将上映 */
+.hotMovieContent,.futureMovieContent{
+  height: 100%;
+}
+.hotArea,.futureArea{
+  height: 1020rpx;
+}
+.hotSwiper{
+  height: 300rpx;
+}
+.hotSwiper image{
+  width:100%;
+  height: 100%;
+}
+.advertising{
+  height: 170rpx;
+}
+.advertising image{
+  width:100%;
+  height: 100%;
+}
+.movieHotList,.movieFutureList{
+  height: auto;
+  padding: 0 20rpx;
+}
+.movieListItem{
+  height: auto;
+}

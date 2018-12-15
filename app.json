@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userCenter/userCenter",
+    "pages/userAuthorization/userAuthorization",
+    "pages/movieDetail/movieDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "电影",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "电影",
+        "iconPath": "/static/images/movieNo.png",
+        "selectedIconPath": "/static/images/movieYes.png"
+      },
+      {
+        "pagePath": "pages/userCenter/userCenter",
+        "text": "我的",
+        "iconPath": "/static/images/mineNo.png",
+        "selectedIconPath": "/static/images/mineYes.png"
+      }
+    ]
+  }
+}

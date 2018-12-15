@@ -1,0 +1,51 @@
+<!-- 个人中心 -->
+<view class='movieUserCenter'>
+  <!-- 用户头部 -->
+  <view class='movieUserHeader'>
+    <image src='{{ userInfo.avatarUrl }}'></image>
+    <text class='username'>{{ userInfo.nickName }}</text>
+  </view>
+
+  <!-- 可选菜单 -->
+  <view class='userCenterMenu'>
+    <!-- 电影票 -->
+    <view class='menuItem'>
+      <image src='../../static/images/movie.png'></image>
+      <text>电影</text>
+    </view>
+
+    <!-- 演出表 -->
+    <view class='menuItem'>
+      <image src='../../static/images/table.png'></image>
+      <text>演出表</text>
+    </view>
+
+    <!-- 优惠券 -->
+    <view class='menuItem'>
+      <image src='../../static/images/shopCard.png'></image>
+      <text>优惠券</text>
+    </view>
+
+    <!-- 影城卡 -->
+    <view class='menuItem'>
+      <image src='../../static/images/movieCard.png'></image>
+      <text>影城卡</text>
+    </view>
+  </view>
+
+  <view class='vanCell'><van-cell title="我的会员" is-link/></view>
+
+  <view class='vanCell'>
+    <van-cell title="想看的电影" is-link/>
+    <van-cell title="看过的电影" is-link/>
+  </view>
+
+  <view class='vanCell'>
+    <van-cell title="帮助中心-咨询票小蜜" is-link/>
+    <van-cell title="设置" is-link/>
+  </view>
+
+  <view class='vanCell'>
+    <van-cell title="银行卡特惠" is-link/>
+  </view>
+</view>
